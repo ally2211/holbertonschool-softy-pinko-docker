@@ -9,5 +9,5 @@ WORKDIR /app
 COPY . /app
 
 # Add a script to run when the container launches
-CMD ["echo", "Hello, World"]
+CMD ["echo", "Hello, World!"]
 
