@@ -5,7 +5,7 @@ FROM nginx:latest
 RUN rm /etc/nginx/conf.d/default.conf
 
 # Copy the custom Nginx configuration file into the container
-COPY softy-pinko-front-end.conf /etc/nginx/conf.d/default.conf
+COPY ./softy-pinko-front-end.conf /etc/nginx/conf.d/default.conf
 
 # Create the directory for softy-pinko-front-end
 RUN mkdir -p /var/www/html/softy-pinko-front-end
