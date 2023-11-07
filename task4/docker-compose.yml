@@ -15,13 +15,13 @@ services:
 
   backend:
     build:
-      context: ./backend
+      context: ./back-end
       dockerfile: Dockerfile
     image: softy-pinko-backend:latest
     ports:
       - "5252:5252"
     volumes:
-      - ./backend:/app
+      - ./back-end:/app
     networks:
       - app-network
 
