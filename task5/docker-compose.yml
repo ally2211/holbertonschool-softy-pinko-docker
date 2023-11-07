@@ -18,8 +18,6 @@ services:
       context: ./front-end
       dockerfile: Dockerfile
     image: softy-pinko-front-end:latest
-    ports:
-      - "9000:9000"
     volumes:
       - ./front-end/softy-pinko-front-end:/var/www/html/softy-pinko-front-end
     networks:
@@ -30,8 +28,6 @@ services:
       context: ./back-end
       dockerfile: Dockerfile
     image: softy-pinko-backend:latest
-    ports:
-      - "5252:5252"
     volumes:
       - ./back-end:/app
     networks:
